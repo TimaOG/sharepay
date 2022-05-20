@@ -1,0 +1,7 @@
+set FLASK_APP=config
+flask db init
+flask db migrate -m "suka"
+flask db upgrade
+
+
+python love.py

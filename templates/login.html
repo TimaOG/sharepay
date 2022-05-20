@@ -1,0 +1,54 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/myCss.css')}}">
+    <title>SaleOn!</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.slim.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <nav style="background: #763456 !important" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <h1 class="navbar-brand" style="font-size: 2em;"><a href="{{ url_for('openMain') }}" style="text-decoration: none; color: #ffffff">SharePay</a></h1>
+      </div>
+    </nav>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <div class="wrapper">
+      <h3 style="text-align:left;">Войдите в SharePay</h3>
+      <br>
+      <div class="header">
+        <h3 class="sign-in">Вход</h3>
+        <div class="button">
+          <a href="{{ url_for('register') }}">Регистрация</a>
+        </div>
+      </div>
+      <div class="clear"></div> 
+      <form action="" method="POST">
+        <div>
+          <input class="user-input" type="text" name="email" placeholder="Логин" />
+        </div> 
+        <div>
+         <input type="password" name="password" placeholder="Пароль" />
+       </div> 
+       <div>
+        <input type="submit" value="Войти" />
+      </div>
+      <span class="forgot-label">Забыли пароль?</span>
+      <div class="clear"></div>
+    </form>  
+  </div>
+</body>
+</html>

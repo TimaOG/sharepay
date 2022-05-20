@@ -1,0 +1,58 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/myCss.css')}}">
+    <title>SaleOn!</title>
+  </head>
+  <body>
+     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.slim.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <nav style="background: #763456 !important" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <h1 class="navbar-brand" style="font-size: 2em;"><a href="{{ url_for('openMain') }}" style="text-decoration: none; color: #ffffff">SharePay</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRespons">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav justify-content-end" id="navbarRespons">
+          <ul class="nav nav-pills ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="color: #FFFFFF !important; margin-right: 20px;" href="">Фонды</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #FFFFFF !important; margin-right: 20px;" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Что такое SharePay?</h2>
+          <p class="leadAnother featurette">Of course. More placeholder content here to give you an idea ofleadAnother featurette</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://www.viraj-spb.ru/netcat_files/2556_220.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto width=500 height=500">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading" style="text-align:right;">Oh yeah, it’s that good.</h2>
+          <p class="leadAnother featurette" style="text-align:right;">Of course. More placeholder content here to give you an idea ofleadAnother featurette</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="https://www.viraj-spb.ru/netcat_files/2556_220.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto width=500 height=500">
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </body>
+  </html>
